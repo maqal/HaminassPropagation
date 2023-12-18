@@ -7,7 +7,10 @@ class Customer(models.Model):
     address = models.CharField(max_length=50)
     phone = models.CharField(max_length=13)
     customer_id = models.CharField(max_length=50, primary_key = True)
-   
+    
+    
+    
+    
 class Order(models.Model):
     order_name = models.CharField(max_length=50)
     order_date = models.DateField(auto_now_add = True)
